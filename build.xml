@@ -15,7 +15,7 @@
 </classpath>
 </javac>
 	<copy file="WEB-INF/web.xml" tofile="src/WEB-INF/web.xml"/>
-	<copy file="demo.html" tofile="src"/>
+	<copy file="demo.html" tofile="src/demo.html"/>
 
     </target>
 <target name="war">
