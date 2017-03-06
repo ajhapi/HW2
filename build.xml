@@ -9,7 +9,7 @@
          <mkdir dir="src/WEB-INF/classes"/>
         <javac srcdir="WEB-INF/classes" destdir="src/WEB-INF/classes">
 	<copy file="WEB-INF/web.xml" tofile="src/WEB-INF/web.xml"/>
-	<copy file="demo.html" tofile="src">
+	<copy file="demo.html" tofile="src" />
 <classpath>
   <fileset dir=".">
  <include name="*.jar" />
