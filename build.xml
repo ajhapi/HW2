@@ -6,8 +6,10 @@
 
     <target name="compile">
 <!-- Keep the servlet-api.jar in the same directory of build.xml -->
-        <mkdir dir="src/WEB-INF/classes"/>
-        <javac srcdir="src/WEB-INF/classes" destdir="src/WEB-INF/classes">
+         <mkdir dir="src/WEB-INF/classes"/>
+        <javac srcdir="WEB-INF/classes" destdir="src/WEB-INF/classes">
+	<copy file="WEB-INF/web.xml" tofile="src/WEB-INF/web.xml"/>
+	<copy file="demo.html" tofile="src">
 <classpath>
   <fileset dir=".">
  <include name="*.jar" />
